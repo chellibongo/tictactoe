@@ -1,1 +1,13 @@
-An implementation of tic tac toe in java
+#An implementation of tic tac toe in java using maven as a build tool
+
+Two players can play via command line and the game board is display in command line
+
+##Compile
+mvn compile
+
+##Run
+java -cp target/tictactoe-1.0-SNAPSHOT.jar com.tictactoe.Main
+
+##TODO
+-Add error handling
+-Add unit testing
