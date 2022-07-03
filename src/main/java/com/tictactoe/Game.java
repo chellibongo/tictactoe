@@ -22,9 +22,11 @@ public class Game {
     private void getNextMove(Player player) {
         System.out.println(player.getName() + " it's your turn:");
         System.out.println("Enter row:");
-        int row = Input.scan.nextInt() - 1;
+        //int row = Input.scan.nextInt() - 1;
+        int row = Input.getInt() - 1;
         System.out.println("Enter column:");
-        int col = Input.scan.nextInt() - 1;
+        //int col = Input.scan.nextInt() - 1;
+        int col = Input.getInt() - 1;
         if(board.isPositionFree(row, col)) {
             takeMove(player, row, col);
         } else {
